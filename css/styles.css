@@ -88,6 +88,7 @@ aside a:hover {
     grid-column-gap: 10px; 
     grid-row-gap: 10px;
     margin-right: 5px;
+    padding-right: 10px;
   }
 
   .one {
