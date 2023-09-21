@@ -19,6 +19,13 @@ h1, h2, h3, p {
     color: white;
 }
 
+header h3 {
+    text-align: center;
+    font-size: 35px;
+    word-spacing: 35px;
+    color: var(--codegreen);
+}
+
 #mySidebar img {
     width: 170px;
     height: 140px;
@@ -45,48 +52,14 @@ main {
     margin: auto;
 }
 
-aside {
-  margin-left: 20px;
-  margin-top: -2280px;
-  width: 200px;
-  /* in case I want a background */
-  height: 1600px;
-  padding: 1%;
-  padding-right: 25px;
-}
-
-ul {
-  color: white;
-  margin-left: 25px;
-  list-style-type: none;
-  margin-top: 30px;
-}
-
-li {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 150px;
-}
-
-aside a{
-  text-decoration: none;
-  font-size: 17px;
-  color: var(--offsetpurple);
-}
-
-aside a:hover {
-  color: #f1f1f1;
-  text-decoration: none;
-}
-
 .container {
     display: grid;
     margin: auto;
     border-top: solid 2px rgb(255, 255, 255);
-    justify-content: right;
+    justify-content: center;
     padding-top: 1%;
-    grid-column-gap: 10px; 
-    grid-row-gap: 10px;
+    grid-column-gap: 50px; 
+    grid-row-gap: 50px;
     margin-right: 5px;
     padding-right: 10px;
   }
@@ -96,21 +69,6 @@ aside a:hover {
     grid-row: 1;
     position: relative;
     text-align: center;
-  }
-
-  .one img:hover{
-    background-color: bisque;
-  }
-
-  .one .i {
-    position: absolute; /* Set the text to absolute positioning */
-    top: 35%; /* Adjust vertical position */
-    left: 54%; /* Adjust horizontal position */
-    transform: translate(-50%, -50%); /* Center the text within the container */
-    color: var(--codegreen);
-    z-index: 1; /* Set a higher z-index to make text appear above the image */
-    font-size: 100px;
-    font-family: monospace;
   }
 
   .two {
@@ -139,16 +97,6 @@ aside a:hover {
     position: relative;
     text-align: center;
   }
-  .five .see {
-    position: absolute; /* Set the text to absolute positioning */
-    top: 30%; /* Adjust vertical position */
-    left: 50%; /* Adjust horizontal position */
-    transform: translate(-50%, -50%); /* Center the text within the container */
-    color: var(--codegreen);
-    z-index: 1; /* Set a higher z-index to make text appear above the image */
-    font-size: 100px;
-    font-family: monospace;
-  }
 
   .six {
     grid-column: 3;
@@ -158,8 +106,6 @@ aside a:hover {
   .seven {
    grid-column: 1;
    grid-row: 3;
-   /* border-left: solid white 2px;
-   padding-left: 90px; */
   }
    
  .eight {
@@ -177,17 +123,6 @@ aside a:hover {
    position: relative;
    text-align: center;
  }
- 
- .nine .you {
-  position: absolute; /* Set the text to absolute positioning */
-  top: 40%; /* Adjust vertical position */
-  left: 50%; /* Adjust horizontal position */
-  transform: translate(-50%, -50%); /* Center the text within the container */
-  color: var(--codegreen);
-  z-index: 1; /* Set a higher z-index to make text appear above the image */
-  font-size: 100px;
-  font-family: monospace;
-}
 
 .ten {
   grid-column: 4;
@@ -227,8 +162,8 @@ aside a:hover {
 /* Initially hide elements with class "reveal" */
 .reveal {
   opacity: 0;
-  transform: translateY(0);
-  animation: fadeEffect 5s ease-in-out infinite;
+  transform: translateY(20px);
+  animation: fadeEffect 3s ease-in-out infinite;
 }
 
 .reveal.visible {
