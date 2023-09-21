@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Handlee&display=swap');
+
 :root {
-  --codegreen: rgb(0, 240, 4);
-  --softwhite: rgb(225, 225, 225);
+  --codegreen: rgb(5, 236, 9);
+  --softwhite: rgb(236, 236, 236);
   --offsetpurple: #9215bc;
+  --offsetphover: #3c0d4b;
+  --offsetorange: rgb(251, 173, 78);
 }
 
 body {
-    font-family: monospace;
-    background-color: black;
+  background-color: black;
+  font-family: 'Fira Code', monospace;
 }
 
 
@@ -43,7 +47,11 @@ main {
 aside {
   margin-left: 20px;
   margin-top: -1670px;
-  width: 200px; /* Adjust the width as needed */
+  width: 200px;
+  height: 1600px;
+  background-color: rgba(46, 10, 46, 0.44);
+  padding: 1%;
+  padding-right: 25px;
 }
 
 ul {
@@ -222,17 +230,17 @@ aside a:hover {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
  
  .sidebar a {
-    padding: 8px 8px 20px 32px;
+    padding: 8px 8px 20px 42px;
     text-decoration: none;
     font-size: 25px;
-    color: #ababab;
+    color: #b7acac;
     display: block;
     transition: 0.3s;
  }
@@ -257,12 +265,14 @@ aside a:hover {
 
  .sidebar footer {
   position: absolute;
-  bottom: 0;
-  left: 20px;
-  text-decoration: none;
-  font-size: 10px;
-  color: #ababab;
-  display: block;
+ }
+
+ footer h3 {
+  margin-left: 25px;
+  margin-top: 240px;
+  color: var(--offsetorange);
+  font-size: 12px;
+  text-decoration: overline;
  }
  
  .openbtn {
@@ -276,7 +286,7 @@ aside a:hover {
  }
  
  .openbtn:hover {
-    background-color: #444;
+    background-color: var(--offsetphover);
  }
  
  #content {
