@@ -11,6 +11,7 @@
 body {
   background-color: black;
   font-family: 'Fira Code', monospace;
+  width: 1440px;
 }
 
 
@@ -289,7 +290,4 @@ aside a:hover {
     background-color: var(--offsetphover);
  }
  
- #content {
-    padding: 16px;
- }
  

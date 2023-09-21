@@ -1,5 +1,6 @@
 * {
     background-color: black;
+    cursor: url('../img/glowing-cursor-2.png'), auto;
 }
 
 h1 {
