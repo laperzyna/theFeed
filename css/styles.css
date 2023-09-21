@@ -3,7 +3,7 @@
 :root {
   --codegreen: rgb(5, 236, 9);
   --softwhite: rgb(236, 236, 236);
-  --offsetpurple: #9215bc;
+  --offsetpurple: #9f18cc;
   --offsetphover: #3c0d4b;
   --offsetorange: rgb(251, 173, 78);
 }
@@ -11,7 +11,7 @@
 body {
   background-color: black;
   font-family: 'Fira Code', monospace;
-  width: 1440px;
+  width: 1435px;
 }
 
 
@@ -37,7 +37,7 @@ main img {
    width: 275px;
    height: 550px;
    margin: auto;
-   margin-top: 50;
+
 }
 
 main {
@@ -47,7 +47,7 @@ main {
 
 aside {
   margin-left: 20px;
-  margin-top: -1670px;
+  margin-top: -2280px;
   width: 200px;
   /* in case I want a background */
   height: 1600px;
@@ -95,6 +95,10 @@ aside a:hover {
     grid-row: 1;
     position: relative;
     text-align: center;
+  }
+
+  .one img:hover{
+    background-color: bisque;
   }
 
   .one .i {
@@ -198,10 +202,26 @@ aside a:hover {
   grid-column: 4;
   grid-row: 3;
 }
-/* 
-.three video {
-  object-fit: cover;
-} */
+
+.thirteen {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.fourteen {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.fifteen {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.sixteen {
+  grid-column: 4;
+  grid-row: 4;
+}
 
 /* Initially hide elements with class "reveal" */
 .reveal {
