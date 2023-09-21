@@ -1,1 +1,1 @@
-# thefeed
+# theFeed

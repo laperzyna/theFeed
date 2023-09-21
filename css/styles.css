@@ -1,0 +1,256 @@
+:root {
+  --codegreen: rgb(0, 240, 4);
+  --softwhite: rgb(225, 225, 225);
+  --offsetpurple: #9215bc;
+}
+
+body {
+    font-family: monospace;
+    background-color: black;
+}
+
+
+h1, h2, h3, p {
+    color: white;
+}
+
+#mySidebar img {
+    width: 170px;
+    height: 140px;
+    margin-left: 2px;
+}
+
+#headerGif {
+  display: block;
+  width: 130px;
+  height: 115px;
+  margin-top: -57.5px;
+}
+
+main img {
+   display: block;
+   width: 275px;
+   height: 550px;
+   margin: auto;
+   margin-top: 50;
+}
+
+main {
+    display: block;
+    margin: auto;
+}
+
+aside {
+  margin-left: 20px;
+  margin-top: -1670px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+ul {
+  color: white;
+  margin-left: 25px;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+li {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+aside a{
+  text-decoration: none;
+  font-size: 17px;
+  color: var(--offsetpurple);
+}
+
+aside a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    border-top: solid 2px rgb(255, 255, 255);
+    justify-content: center;
+    padding-top: 2%;
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px;
+  }
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    text-align: center;
+    /* border-left: solid white 2px;
+    padding-left: 90px; */
+  }
+
+  .one .i {
+    position: absolute; /* Set the text to absolute positioning */
+    top: 25%; /* Adjust vertical position */
+    left: 40%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: var(--codegreen);
+    z-index: 1; /* Set a higher z-index to make text appear above the image */
+    font-size: 100px;
+    font-family: monospace;
+  }
+
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .three {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .three video {
+    object-fit: cover;
+}
+  .four {
+    grid-column: 1;
+    grid-row: 2;
+    /* border-left: solid white 2px;
+    padding-left: 90px; */
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    text-align: center;
+  }
+  .five .see {
+    position: absolute; /* Set the text to absolute positioning */
+    top: 30%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: var(--codegreen);
+    z-index: 1; /* Set a higher z-index to make text appear above the image */
+    font-size: 100px;
+    font-family: monospace;
+  }
+
+  .six {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .seven {
+   grid-column: 1;
+   grid-row: 3;
+   /* border-left: solid white 2px;
+   padding-left: 90px; */
+ }
+ .eight {
+   grid-column: 2;
+   grid-row: 3;
+ }
+ .nine {
+   grid-column: 3;
+   grid-row: 3;
+   position: relative;
+   text-align: center;
+ }
+ .nine .you {
+  position: absolute; /* Set the text to absolute positioning */
+  top: 40%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the text within the container */
+  color: var(--codegreen);
+  z-index: 1; /* Set a higher z-index to make text appear above the image */
+  font-size: 100px;
+  font-family: monospace;
+}
+
+/* Initially hide elements with class "reveal" */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeEffect 5s ease-in-out infinite;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeEffect {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+ 
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+ 
+ .sidebar a {
+    padding: 8px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ababab;
+    display: block;
+    transition: 0.3s;
+ }
+ 
+ .sidebar a:hover {
+  color: var(--softwhite);
+ }
+ 
+ .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+ }
+
+ .sidebar img {
+  margin-left: -40px;
+  width: 250px;
+  height: 300px;
+ }
+
+ .sidebar footer {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #ababab;
+  display: block;
+ }
+ 
+ .openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    color: var(--softwhite);
+    border: none;
+    background-color: var(--offsetpurple);
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+ 
+ .openbtn:hover {
+    background-color: #444;
+ }
+ 
+ #content {
+    padding: 16px;
+ }
+ 
