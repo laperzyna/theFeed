@@ -48,8 +48,8 @@ aside {
   margin-left: 20px;
   margin-top: -1670px;
   width: 200px;
+  /* in case I want a background */
   height: 1600px;
-  background-color: rgba(46, 10, 46, 0.44);
   padding: 1%;
   padding-right: 25px;
 }
