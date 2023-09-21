@@ -74,7 +74,7 @@ aside a:hover {
     display: grid;
     margin: auto;
     border-top: solid 2px rgb(255, 255, 255);
-    justify-content: center;
+    justify-content: right;
     padding-top: 2%;
     grid-column-gap: 10px; 
     grid-row-gap: 10px;
@@ -85,8 +85,6 @@ aside a:hover {
     grid-row: 1;
     position: relative;
     text-align: center;
-    /* border-left: solid white 2px;
-    padding-left: 90px; */
   }
 
   .one .i {
@@ -114,9 +112,12 @@ aside a:hover {
   .four {
     grid-column: 1;
     grid-row: 2;
-    /* border-left: solid white 2px;
-    padding-left: 90px; */
   }
+
+  .four video {
+    object-fit: cover;
+  }
+  
   .five {
     grid-column: 2;
     grid-row: 2;
@@ -143,17 +144,24 @@ aside a:hover {
    grid-row: 3;
    /* border-left: solid white 2px;
    padding-left: 90px; */
- }
+  }
+   
  .eight {
    grid-column: 2;
    grid-row: 3;
  }
+
+ .eight video {
+  object-fit: cover;
+}
+
  .nine {
    grid-column: 3;
    grid-row: 3;
    position: relative;
    text-align: center;
  }
+ 
  .nine .you {
   position: absolute; /* Set the text to absolute positioning */
   top: 40%; /* Adjust vertical position */
@@ -164,6 +172,25 @@ aside a:hover {
   font-size: 100px;
   font-family: monospace;
 }
+
+.ten {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.eleven {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.twelve {
+  grid-column: 4;
+  grid-row: 3;
+}
+/* 
+.three video {
+  object-fit: cover;
+} */
 
 /* Initially hide elements with class "reveal" */
 .reveal {
