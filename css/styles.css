@@ -78,6 +78,7 @@ aside a:hover {
     padding-top: 2%;
     grid-column-gap: 10px; 
     grid-row-gap: 10px;
+    margin-right: 5px;
   }
 
   .one {
@@ -139,6 +140,7 @@ aside a:hover {
     grid-column: 3;
     grid-row: 2;
   }
+
   .seven {
    grid-column: 1;
    grid-row: 3;
