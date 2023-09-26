@@ -15,21 +15,24 @@ body {
 }
 
 
-h1, h2, h3, p {
-    color: white;
+h1,
+h2,
+h3,
+p {
+  color: white;
 }
 
 header h3 {
-    text-align: center;
-    font-size: 35px;
-    word-spacing: 35px;
-    color: var(--codegreen);
+  text-align: center;
+  font-size: 35px;
+  word-spacing: 35px;
+  color: var(--codegreen);
 }
 
 #mySidebar img {
-    width: 170px;
-    height: 140px;
-    margin-left: 2px;
+  width: 170px;
+  height: 140px;
+  margin-left: 2px;
 }
 
 #headerGif {
@@ -40,89 +43,92 @@ header h3 {
 }
 
 main img {
-   display: block;
-   width: 275px;
-   height: 550px;
-   margin: auto;
+  display: block;
+  width: 275px;
+  height: 550px;
+  margin: auto;
 
 }
 
 main {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .container {
-    display: grid;
-    margin: auto;
-    border-top: solid 2px rgb(255, 255, 255);
-    justify-content: center;
-    padding-top: 1%;
-    grid-column-gap: 50px; 
-    grid-row-gap: 50px;
-    margin-right: 5px;
-    padding-right: 10px;
-  }
-
-  .one {
-    grid-column: 1;
-    grid-row: 1;
-    position: relative;
-    text-align: center;
-  }
-
-  .two {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .three {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .three video {
-    object-fit: cover;
+  display: grid;
+  margin: auto;
+  border-top: solid 2px rgb(255, 255, 255);
+  justify-content: center;
+  padding-top: 1%;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-right: 5px;
+  padding-right: 10px;
 }
-  .four {
-    grid-column: 1;
-    grid-row: 2;
-  }
 
-  .four video {
-    object-fit: cover;
-  }
-  
-  .five {
-    grid-column: 2;
-    grid-row: 2;
-    position: relative;
-    text-align: center;
-  }
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  text-align: center;
+}
 
-  .six {
-    grid-column: 3;
-    grid-row: 2;
-  }
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
 
-  .seven {
-   grid-column: 1;
-   grid-row: 3;
-  }
-   
- .eight {
-   grid-column: 2;
-   grid-row: 3;
- }
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
 
- .eight video {
+.three video {
   object-fit: cover;
 }
 
- .nine {
-   grid-column: 3;
-   grid-row: 3;
-   position: relative;
-   text-align: center;
- }
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.four video {
+  object-fit: cover;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  text-align: center;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.eight video {
+  object-fit: cover;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+  position: relative;
+  text-align: center;
+}
 
 .ten {
   grid-column: 4;
@@ -171,14 +177,17 @@ main {
 }
 
 @keyframes fadeEffect {
-  0%, 100% {
-      opacity: 0;
+
+  0%,
+  100% {
+    opacity: 0;
   }
+
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 }
- 
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -191,58 +200,66 @@ main {
   transition: 0.5s;
   padding-top: 60px;
 }
- 
- .sidebar a {
-    padding: 8px 8px 20px 42px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #b7acac;
-    display: block;
-    transition: 0.3s;
- }
- 
- .sidebar a:hover {
-  color: var(--softwhite);
- }
- 
- .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
- }
 
- .sidebar img {
+.sidebar a {
+  padding: 8px 8px 20px 42px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b7acac;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: var(--softwhite);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar img {
   margin-left: -40px;
   width: 250px;
   height: 300px;
- }
+}
 
- .sidebar footer {
+.sidebar #message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar footer {
   position: absolute;
- }
+}
 
- footer h3 {
+footer h3 {
   margin-left: 25px;
   margin-top: 240px;
   color: var(--offsetorange);
   font-size: 12px;
   text-decoration: overline;
- }
- 
- .openbtn {
-    font-size: 35px;
-    cursor: pointer;
-    color: var(--softwhite);
-    border: none;
-    background-color: var(--offsetpurple);
-    margin-top: 20px;
-    margin-left: 20px;
- }
- 
- .openbtn:hover {
-    background-color: var(--offsetphover);
- }
- 
- 
+}
+
+.openbtn {
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--softwhite);
+  border: none;
+  background-color: var(--offsetpurple);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.openbtn:hover {
+  background-color: var(--offsetphover);
+}

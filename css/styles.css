@@ -6,6 +6,7 @@
   --offsetpurple: #9f18cc;
   --offsetphover: #3c0d4b;
   --offsetorange: rgb(251, 173, 78);
+  --offwhite: #b7acac;
 }
 
 body {
@@ -261,7 +262,7 @@ aside a:hover {
     padding: 8px 8px 20px 42px;
     text-decoration: none;
     font-size: 25px;
-    color: #b7acac;
+    color: var(--offwhite);
     display: block;
     transition: 0.3s;
  }
@@ -283,6 +284,16 @@ aside a:hover {
   width: 250px;
   height: 300px;
  }
+
+ .sidebar #message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
 
  .sidebar footer {
   position: absolute;
