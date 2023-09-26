@@ -13,3 +13,7 @@ img {
     margin-top: 20px;
 }
 
+img:hover {
+    border: double 3px rgba(224, 224, 224, 0.828);
+    cursor: pointer;
+}
