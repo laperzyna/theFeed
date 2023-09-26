@@ -20,6 +20,7 @@ h2,
 h3,
 p {
   color: white;
+  text-align: center;
 }
 
 header h3 {
@@ -262,4 +263,12 @@ footer h3 {
 
 .openbtn:hover {
   background-color: var(--offsetphover);
+}
+
+#downloading {
+  text-align: right;
+  font-size: 35px;
+  word-spacing: 35px;
+  margin-right: 200px;
+  color: var(--codegreen);
 }
